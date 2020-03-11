@@ -25,7 +25,7 @@ class StatsCommand extends Command {
     async exec(msg) {
 
         const startTime = Date.now();
-        const statsMsg = await msg.channel.send('Doing Stuff...')
+        const statsMsg = await msg.channel.send('Doing Stuff...');
         console.log('Pinging!');
         const endTime = Date.now();
         const ping = Math.round(endTime - startTime);

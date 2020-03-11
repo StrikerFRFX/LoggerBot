@@ -37,7 +37,7 @@
         "object-curly-spacing": ["error", "always"],
         "prefer-const": "error",
         "quotes": ["error", "single"],
-        "semi": ["error", "always"],
+        "semi": ["warn", "always"],
         "space-before-blocks": "error",
         "space-in-parens": "error",
         "yoda": "error"
