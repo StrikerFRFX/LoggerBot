@@ -11,13 +11,13 @@ class UptimeCommand extends Command {
             this.help = {
                 'help': {
                     name: 'Uptime',
-                    description: 'Returns how long Kantan has been online for',
+                    description: 'Returns how long LoggerBot has been online for',
                     category: 'Main',
                     usage: '--uptime',
                     aliases: 'None',
                     DMs: 'Yes',
                     UserPerms: 'None',
-                    KantanPerms: 'Send Messages'
+                    BotPerms: 'Send Messages'
                 }
             };
     }

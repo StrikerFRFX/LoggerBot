@@ -14,19 +14,19 @@ class guildCreateListener extends Listener {
         const server = this.client.guilds.fetch(guild.id);
 
         const serveradded = this.client.util.embed()
-            .setAuthor('Kantan')
+            .setAuthor('LoggerBot')
             .setColor('#08ff00')
             .setTitle('New server added!')
             .setThumbnail(this.client.user.avatarURL())
-            .setDescription('Kantan has been added to a new server!\nThe server info will be displayed below.')
+            .setDescription('LoggerBot has been added to a new server!\nThe server info will be displayed below.')
             .addField('Server info', `Name: ${server.name}\nID: ${server.id}\nMade: ${server.createdAt}\nOwner: ${server.owner.user.tag} (ID: ${server.ownerID})\nRegion: ${server.region}\nRoles: ${server.roles.size}\nVerification Level: ${server.verificationLevel}\nMembers: ${server.members.size}`)
             .setTimestamp();
 
         const welcome = this.client.util.embed()
-            .setAuthor('Kantan')
+            .setAuthor('LoggerBot')
             .setThumbnail(this.client.user.avatarURL())
             .setColor('#ff4500')
-            .addField('Thanks for adding Kantan!', 'Hi! I\'m Kantan, thanks for adding me.\nI have many menu items which you can order, and if you wish to know them use "--menu" to get a list of them.!\nThanks for listening, use "--help" if you wish to find out more commands, and I hope you enjoy using Kantan!')
+            .addField('Thanks for adding LoggerBot!', 'Hi! I\'m LoggerBot, thanks for adding me.\nI have many menu items which you can order, and if you wish to know them use "--menu" to get a list of them.!\nThanks for listening, use "--help" if you wish to find out more commands, and I hope you enjoy using LoggerBot!')
             .addField('Need to contact us?', 'You can always join the official server and ask for help there!\nWe are English speaking, but we can speak some foreign languages too.\nJoin here: ')
             .setTimestamp();
 

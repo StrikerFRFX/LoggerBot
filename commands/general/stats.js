@@ -17,7 +17,7 @@ class StatsCommand extends Command {
                 aliases: '--statistics',
                 DMs: 'Yes.',
                 UserPerms: 'No extra perms required.',
-                KantanPerms: 'Send Messages in channel.'
+                BotPerms: 'Send Messages in channel.'
             }
         };
     }
@@ -40,23 +40,23 @@ class StatsCommand extends Command {
             .join('\n');
 
         const guildInfo = stripIndents `
-    Guilds: ${this.client.guilds.size}
-    Channels: ${this.client.channels.size}
+    Guilds: ${this.client.guilds.cache.size}
+    Channels: ${this.client.channels.cache.size}
     `;
 
         const cpuUsage = String(process.cpuUsage().system / 1000000) + '%';
 
         const statsEmbed = this.client.util.embed()
-            .setTitle(`Kantan Version ${version}`)
+            .setTitle(`LoggerBot Version ${version}`)
             .setColor('#00fff8')
             .setTimestamp()
             .setThumbnail(this.client.user.avatarURL())
-            .addField('Ping', ping, true)
             .addField('Memory Usage', totalMemUsage, true)
             .addField('Last restart', lastRestart, true)
             .addField('Guild Infos', guildInfo, true)
-            .addField('CPU Usage', cpuUsage, true);
-        statsMsg.edit({ embed: statsEmbed });
+            .addField('CPU Usage', cpuUsage, true)
+            .addField('Ping', ping, true);
+        statsMsg.edit('', { embed: statsEmbed });
     }
 }
 

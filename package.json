@@ -1,7 +1,7 @@
 {
   "name": "logger-bot",
   "version": "1.0.0",
-  "description": "An easy to configure, easy to read Logger Bot for Discord Servers",
+  "description": "An easy to configure, easy to read LoggerBot for Discord Servers",
   "main": "main.js",
   "scripts": {
     "test": "eslint ./",

@@ -32,8 +32,8 @@ class HelpCommand extends Command {
                     .addField('Aliases', cmdHelp.aliases)
                     .addField('Can be used in DMs?', cmdHelp.DMs)
                     .addField('User Required Perms', cmdHelp.UserPerms)
-                    .addField('Kantan\'s Required Perms', cmdHelp.KantanPerms)
-                    .setFooter('© Striker#1337 ||  JT Development');
+                    .addField('LoggerBot\'s Required Perms', cmdHelp.BotPerms)
+                    .setFooter('© Striker#1337');
                 return msg.channel.send({
                     embed: help,
                 });
@@ -46,8 +46,8 @@ class HelpCommand extends Command {
             //const ModerationCommands = fs.readdirSync('./commands/Moderation').map(file => path.basename(file, path.extname(file)));
             //const UtilCommands = fs.readdirSync('./commands/Util').map(file => path.basename(file, path.extname(file)));
             const helpString = `
-            __**Kantan's Commands**__\n
-            Kantan is an easy to use and simplistic Discord Bot.
+            __**LoggerBot's Commands**__\n
+            LoggerBot is an easy to use and simplistic Discord Bot.
             You can even use some commands in your DMs!
             If you need more details on any of the commands listed, use \`--help <command>\`
             If you need any further help, you can always join the support server and make a ticket (Server listed with \`--support\`).
@@ -56,7 +56,7 @@ class HelpCommand extends Command {
             const help = this.client.util.embed()
                 .setDescription(helpString)
                 .addField('__**General Commands**__', GeneralCommands)
-                .setFooter('© Striker#1337 ||  JT Development.')
+                .setFooter('© Striker#1337.')
                 .setColor('#00fff8');
 
             await msg.author.send(help);

@@ -1,1 +1,1 @@
-Logger Bot
+LoggerBot
