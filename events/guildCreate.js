@@ -11,7 +11,7 @@ class guildCreateListener extends Listener {
     }
 
     async exec(guild) {
-        const server = this.client.guilds.get(guild.id);
+        const server = this.client.guilds.fetch(guild.id);
 
         const serveradded = this.client.util.embed()
             .setAuthor('Kantan')
@@ -34,7 +34,7 @@ class guildCreateListener extends Listener {
             type: 'WATCHING',
         });
 
-        this.client.channels.get('687359233804730379').send({
+        this.client.channels.fetch('687359233804730379').send({
             embed: serveradded,
         });
 

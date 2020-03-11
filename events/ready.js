@@ -19,7 +19,7 @@ class ReadyListener extends Listener {
 
         console.log(`${this.client.user.username} is connected to the Discord WebSocket`);
 
-        const channel = this.client.channels.get('687359233804730379');
+        const channel = this.client.channels.fetch('687359233804730379');
         if (channel) channel.send(`${this.client.user.username} is now online!`);
 
         if (process.env.DBOTS == 'no') return;
