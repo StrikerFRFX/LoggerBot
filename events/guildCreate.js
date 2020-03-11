@@ -34,7 +34,7 @@ class guildCreateListener extends Listener {
             type: 'WATCHING',
         });
 
-        this.client.channels.get('670753607402127390').send({
+        this.client.channels.get('687359233804730379').send({
             embed: serveradded,
         });
 

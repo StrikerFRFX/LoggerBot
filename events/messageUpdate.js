@@ -18,7 +18,7 @@ class messageUpdateListener extends Listener {
                 .setTimestamp()
                 .setThumbnail(this.client.user.avatarURL());
             msg.guild ? log.addField('Server', `${msg.guild.name} ID: ${msg.guild.id}`) : log.addField('Used In DMS', '^');
-            this.client.channels.get('670753607402127390').send({
+            this.client.channels.get('687359233804730379').send({
                 embed: log,
             });
         }

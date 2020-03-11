@@ -15,7 +15,7 @@ class guildDeleteListener extends Listener {
             type: 'WATCHING',
         });
 
-        this.client.channels.get('670753607402127390').send(`Kick from: ${guild.name}\nOwner: ${guild.owner.user.username}#${guild.owner.user.discriminator} (ID: ${guild.owner.id})`);
+        this.client.channels.get('687359233804730379').send(`Kick from: ${guild.name}\nOwner: ${guild.owner.user.username}#${guild.owner.user.discriminator} (ID: ${guild.owner.id})`);
 
         if (process.env.DBOTS == 'no') return;
         else {
