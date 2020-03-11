@@ -1,0 +1,36 @@
+{
+  "name": "logger-bot",
+  "version": "1.0.0",
+  "description": "An easy to configure, easy to read Logger Bot for Discord Servers",
+  "main": "main.js",
+  "scripts": {
+    "test": "eslint ./",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Strikerrr/Logger-Bot.git"
+  },
+  "keywords": [
+    "Logging",
+    "Discord",
+    "Servers"
+  ],
+  "author": "Striker <zzstrikerzzyt@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Strikerrr/Logger-Bot/issues"
+  },
+  "homepage": "https://github.com/Strikerrr/Logger-Bot#readme",
+  "dependencies": {
+    "discord-akairo": "github:discord-akairo/discord-akairo",
+    "discord.js": "github:discordjs/discord.js",
+    "eslint": "^6.3.0",
+    "snekfetch": "^4.0.4",
+    "superagent": "^5.1.0",
+    "moment": "^2.24.0",
+    "moment-duration-format": "^2.3.2",
+    "common-tags": "^1.8.0",
+    "node-superfetch": "^0.1.9"
+  }
+}
