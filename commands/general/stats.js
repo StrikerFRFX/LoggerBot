@@ -27,7 +27,7 @@ class StatsCommand extends Command {
         const startTime = Date.now();
         const statsMsg = await msg.channel.send('Doing Stuff...')
         console.log('Pinging!');
-        const endTime = Date.now(),
+        const endTime = Date.now();
         const ping = Math.round(endTime - startTime);
 
         const lastRestart = this.client.readyAt.toISOString().replace(/z|t/gi, ' ').trim();
