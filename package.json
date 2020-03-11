@@ -4,7 +4,7 @@
   "description": "An easy to configure, easy to read LoggerBot for Discord Servers",
   "main": "main.js",
   "scripts": {
-    "test": "eslint ./",
+    "test": "eslint ./ --fix",
     "start": "node main.js"
   },
   "repository": {
